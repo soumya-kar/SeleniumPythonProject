@@ -25,3 +25,8 @@ class DuckDuckGoResultPage:
 
     def get_title(self):
         return self.browser.title
+
+    def click_on_first_link(self):
+        links=self.browser.find_elements(*self.RESULT_LINKS)
+        links[0].click()
+    

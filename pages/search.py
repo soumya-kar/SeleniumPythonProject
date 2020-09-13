@@ -23,4 +23,6 @@ class DuckDuckGoSearchPage:
         search_button= self.browser.find_element(*self.SEARCH_BTTN)
         search_button.click()
 
-    
+    def search_using_ENTER(self, phrase):
+        search_input= self.browser.find_element(*self.SEARCH_INPUT)
+        search_input.send_keys(phrase, Keys.RETURN)

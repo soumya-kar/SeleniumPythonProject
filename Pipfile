@@ -9,6 +9,7 @@ verify_ssl = true
 pytest = "*"
 atomicwrites = "*"
 selenium = "*"
+pytest-xdist = "*"
 
 [requires]
 python_version = "3.8"
